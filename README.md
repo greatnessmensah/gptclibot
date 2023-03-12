@@ -8,7 +8,7 @@ Your Command Line ChatGPT.
 
 # Run
 ```sh
-~/cli-gpt$ python3 main.py --help
+~/cli-gpt$ python3 gpt_cli_bot/clibot.py --help
 
 Options:
   -m, --model [text-davinci-002|text-curie-001|text-babbage-001]
