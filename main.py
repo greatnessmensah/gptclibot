@@ -151,15 +151,15 @@ def chat(
             for i, response in enumerate(response.choices):
                 output = response.text
                 if output_format == "md":
-                    output = markdown.markdown(output)
+                    output = markdown.markdown(output.strip() + "\n")
                 if i == 0:
-                    click.echo(output)
+                    click.echo(output.strip() + "\n")
                 else:
                     click.echo(click.style(
                         f"Additional response {i + 1}", fg="green"))
-                    click.echo(output)
+                    click.echo(output.strip() + "\n")
 
-                conversation.append({"input": input_text, "response": output})
+                conversation.append({"input": input_text, "response": output.strip() + "\n"})
 
             if text_file != "":
                 with open(text_file, "a") as f:

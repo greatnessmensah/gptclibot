@@ -2,3 +2,15 @@
 2023-03-12 17:41:52,820 INFO: ChatCLI: 
 
 Hello, world!
+2023-03-12 17:46:08,997 INFO: User: hello
+2023-03-12 17:46:08,999 INFO: ChatCLI: 
+
+Hello, how are you doing?
+2023-03-12 17:46:46,889 INFO: User: tell me a long story
+2023-03-12 17:46:46,890 INFO: ChatCLI: 
+
+Once upon a time, there was a princess who lived in a faraway kingdom. One day, she met a handsome prince and they fell in love. They got married and had a beautiful baby girl. They lived happily ever after. The end.
+2023-03-12 17:47:22,543 INFO: User: Tell me a long story
+2023-03-12 17:47:22,544 INFO: ChatCLI:  in short
+
+Once upon a time, there was a very long story. But then, someone decided to shorten it, and so it became a short story. The end.
