@@ -26,9 +26,10 @@ logging.basicConfig(
     ],
 )
 
-click.echo("Welcome to CLICHAT!")
-click.echo("Press any key to start...")
-click.getchar()
+click.echo("""
+    This app uses OpenAI's GPT-3 model to chat with the user. To exit the app, type 'exit'.
+    """)
+
 
 @click.command()
 @click.option(

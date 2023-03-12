@@ -1,2 +1,4 @@
 .venv
 config.txt
+__pycache__
+.pytest_cache
