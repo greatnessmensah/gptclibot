@@ -3,7 +3,7 @@ from click.testing import CliRunner
 from unittest.mock import patch
 import pytest
 
-from clichat.clichat import chat
+from gpt_cli_bot.clibot import chat
 
 
 def test_chat():
@@ -44,7 +44,7 @@ def test_chat():
             "Chat history reset."
         )
         assert result.output.strip() == expected_output
-        assert not os.path.isfile(os.path.join(os.getcwd(), "CLIChat.log"))
+        assert not os.path.isfile(os.path.join(os.getcwd(), "clibot.log"))
 
 
 def test_chat_error():

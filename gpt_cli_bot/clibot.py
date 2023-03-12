@@ -22,7 +22,7 @@ logging.basicConfig(
     format="%(asctime)s %(levelname)s: %(message)s",
     level=logging.INFO,
     handlers=[
-        logging.FileHandler(os.path.join(os.getcwd(), "clichat.log")),
+        logging.FileHandler(os.path.join(os.getcwd(), "clibot.log")),
     ],
 )
 
@@ -108,14 +108,13 @@ def chat(
         try:
             conversation.clear()
             logging.info("Chat history cleared!")
-            os.remove(os.path.join(os.getcwd(), "clichat.log"))
+            os.remove(os.path.join(os.getcwd(), "clibot.log"))
             click.echo(click.style("Chat history reset.", fg="green"))
         except FileNotFoundError:
             click.echo(click.style("Chat history not found.", fg="red"))
         return
     while True:
         try:
-            # Get user input
             input_text = click.prompt(
                 click.style("Enter your message", fg="blue"), type=str
             )
@@ -124,7 +123,6 @@ def chat(
                 click.echo(click.style("Exiting...", fg="red"))
                 break
 
-            # Send user input to ChatGPT and get response
             params = {
                 "engine": model,
                 "prompt": input_text,
@@ -170,7 +168,7 @@ def chat(
 
             conversation.append((input_text, response.text))
             logging.info("User: %s", input_text)
-            logging.info("CLIChat: %s", response.text)
+            logging.info("CLIgpt: %s", response.text)
 
         except Exception as e:
             click.echo(click.style(f"Error: {e}", fg="red"))

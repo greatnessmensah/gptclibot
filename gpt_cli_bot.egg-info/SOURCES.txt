@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+gpt_cli_bot/__inti__.py
+gpt_cli_bot/clibot.py
+gpt_cli_bot.egg-info/PKG-INFO
+gpt_cli_bot.egg-info/SOURCES.txt
+gpt_cli_bot.egg-info/dependency_links.txt
+gpt_cli_bot.egg-info/requires.txt
+gpt_cli_bot.egg-info/top_level.txt
+tests/test_main.py

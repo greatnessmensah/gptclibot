@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gpt-cli-bot
+Version: 0.1
+Summary: Your Command Line ChatGPT
+Home-page: https://github.com/greatnessmensah/gptclibot
+Download-URL: https://github.com/greatnessmensah/gptclibot/archive/v_01.tar.gz
+Author: Ephraim Mensah
+Author-email: ephraimmensah99@gmail.com
+License: MIT
+Keywords: CLI,Command Line Interface,Python,ChatGPT,PyPi
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.md
