@@ -5,7 +5,7 @@ import markdown
 import logging
 
 
-CONFIG_FILE = os.path.expanduser("~/chatcli/config.txt")
+CONFIG_FILE = os.path.join(os.getcwd(), "config.txt")
 os.makedirs(os.path.dirname(CONFIG_FILE), exist_ok=True)
 
 try:
