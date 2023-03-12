@@ -8,7 +8,7 @@ Your Command Line ChatGPT.
 
 # Run
 ```sh
-~/chatcli$ python3 main.py --help
+~/clichat$ python3 main.py --help
 
 Options:
   -m, --model [text-davinci-002|text-curie-001|text-babbage-001]

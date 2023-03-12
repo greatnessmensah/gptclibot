@@ -22,7 +22,7 @@ logging.basicConfig(
     format="%(asctime)s %(levelname)s: %(message)s",
     level=logging.INFO,
     handlers=[
-        logging.FileHandler(os.path.join(os.getcwd(), "chatcli.log")),
+        logging.FileHandler(os.path.join(os.getcwd(), "clichat.log")),
     ],
 )
 
@@ -108,7 +108,7 @@ def chat(
         try:
             conversation.clear()
             logging.info("Chat history cleared!")
-            os.remove(os.path.join(os.getcwd(), "chatcli.log"))
+            os.remove(os.path.join(os.getcwd(), "clichat.log"))
             click.echo(click.style("Chat history reset.", fg="green"))
         except FileNotFoundError:
             click.echo(click.style("Chat history not found.", fg="red"))
@@ -170,7 +170,7 @@ def chat(
 
             conversation.append((input_text, response.text))
             logging.info("User: %s", input_text)
-            logging.info("ChatCLI: %s", response.text)
+            logging.info("CLIChat: %s", response.text)
 
         except Exception as e:
             click.echo(click.style(f"Error: {e}", fg="red"))
